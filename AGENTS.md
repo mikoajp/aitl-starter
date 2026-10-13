@@ -32,3 +32,8 @@ Monorepo TypeScript: `apps/web` (Next.js, React, Tailwind, shadcn-style UI) i `p
 
 ## Struktura `.ai/`
 `specs/` specyfikacje, `runs/` logi uruchomień agentów, `lessons.md` wnioski, `agentic.config.json` konfiguracja pipeline'u.
+
+## Skille agentów
+- Zainstalowane z `open-mercato/skills` (`npx skills add open-mercato/skills --skill '*'`) do `.claude/skills` i `.agents/skills`. Wersje zapisane w `skills-lock.json`.
+- Nie edytuj zainstalowanych skilli bezpośrednio. Dopasowania robimy w `.ai/skills/<nazwa>/SKILL.md` (rozszerzenie skilla o tej samej nazwie). Aktualnie: `om-code-review`.
+- Konfiguracja procesu: `.ai/agentic.config.json`, `SDLC.md`, `CODE_REVIEW.md`. Skill `om-setup-agent-pipeline` może je wygenerować od nowa.
