@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "baseBranch": "main",
+  "tracker": "github",
+  "validation": {
+    "commands": ["npm run lint", "npm run typecheck", "npm run build", "npm test", "npm run test:integration"]
+  },
+  "paths": {
+    "runs": ".ai/runs",
+    "specs": ".ai/specs",
+    "lessons": ".ai/lessons.md"
+  },
+  "reviewChecklist": "CODE_REVIEW.md"
+}
