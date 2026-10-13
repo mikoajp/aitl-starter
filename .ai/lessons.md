@@ -7,3 +7,6 @@ Next.js ostrzega o braku pluginu ESLint podczas `next build`. Lint uruchamiamy o
 
 ## 2026-10-13: npm audit
 `npm audit --omit=dev` zgłasza poziom "high" w zależnościach pośrednich Next.js (postcss, braces). Bramka w CI blokuje od poziomu `critical`. Poziom "high" przeglądamy przy aktualizacjach Next.js. Gdy pojawi się poprawka, podnieś próg do `high`.
+
+## 2026-10-13: skille i nadpisywanie
+Zainstalowanych skilli (`.claude/skills`, `.agents/skills`) nie edytujemy, bo aktualizacja je nadpisze. Zmiany wchodzą do `.ai/skills/<nazwa>/SKILL.md`, który `@`-importuje skill bazowy i dodaje reguły projektu. Przy instalacji używamy `--copy`, żeby repo nie zależało od dowiązań symbolicznych.
