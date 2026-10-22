@@ -33,6 +33,15 @@ Monorepo TypeScript: `apps/web` (Next.js, React, Tailwind, shadcn-style UI) i `p
 ## Struktura `.ai/`
 `specs/` specyfikacje, `runs/` logi uruchomień agentów, `lessons.md` wnioski, `agentic.config.json` konfiguracja pipeline'u.
 
+## Praktyki (routing)
+Zbiór praktyk pracy z agentami: `docs/praktyki/README.md`. Nie czytaj wszystkiego, tylko plik pasujący do zadania.
+
+| Zadanie | Przeczytaj |
+|---|---|
+| Kontekst, `AGENTS.md`, skille, CI, safety net, kodowanie z agentem, bezpieczeństwo warsztatu | `docs/praktyki/praktyki-inzynieria.md` |
+| Brief, backlog, specyfikacja | `docs/praktyki/praktyki-produkt.md` |
+| Ekran UI, design system, prototyp | `docs/praktyki/praktyki-design.md` (oraz `docs/design-system.md`) |
+
 ## Skille agentów
 - Zainstalowane z `open-mercato/skills` (`npx skills add open-mercato/skills --skill '*'`) do `.claude/skills` i `.agents/skills`. Wersje zapisane w `skills-lock.json`.
 - Nie edytuj zainstalowanych skilli bezpośrednio. Dopasowania robimy w `.ai/skills/<nazwa>/SKILL.md` (rozszerzenie skilla o tej samej nazwie). Aktualnie: `om-code-review`.
